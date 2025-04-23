@@ -77,7 +77,6 @@ export class YearController {
       res.status(HTTP_STATUS_INTERNAL_SERVER_ERROR).json({ error: 'Failed to update year' });
     }
   }
-  //delete year on hold
   public async deleteYear(req: Request, res: Response): Promise<void> {
     const { id } = req.params;
 
